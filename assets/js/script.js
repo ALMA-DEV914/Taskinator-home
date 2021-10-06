@@ -272,7 +272,7 @@ var loadTasks = function() {
    // else, load up saved tasks
     savedTasks = JSON.parse(savedTasks);
     // loop through savedTasks array
-  for (var i = 0; i < savedTasks.length; i++) {
+    for (var i = 0; i < savedTasks.length; i++) {
     // pass each task object into the `createTaskEl()` function
     createTaskEl(savedTasks[i]);
     }
@@ -284,4 +284,5 @@ var loadTasks = function() {
  pageContentEl.addEventListener("click", taskButtonHandler);
  // for changing the status
  pageContentEl.addEventListener("change", taskStatusChangeHandler);
+ 
  loadTasks();
